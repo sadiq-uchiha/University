@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.registration {
+  display: inline-block;
+  font-size: 14px;
+}
+.registration .registration-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(237, 230, 230);
+}
+.registration .registration-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.registration:hover .registration-content {
+  display: block;
+}
+
+.registration-content a:hover {
+  color: #FFFFFF;
+}
+
+.main_navbar {
+  display: flex;
+  justify-content: end;
+  background-color: rgb(177, 214, 156);
+}
+.main_navbar li {
+  list-style: none;
+  margin-left: 8px;
+  margin-right: 10px;
+}
+.main_navbar a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #000000;
+}
+.main_navbar a:hover {
+  color: #FFFFFF;
+}
+
+.college_logo {
+  align-items: center;
+}
+.college_logo img {
+  width: 100%;
+  height: auto;
+  padding-left: 200px;
+  padding-right: 220px;
+}
+
+.college_nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+.college_nav li:hover {
+  color: rgb(129, 205, 156);
+}
+.college_nav li {
+  margin-right: 20px;
+  margin-left: 20px;
+  list-style: none;
+  color: rgb(74, 38, 159);
+}
+
+.college_menu {
+  display: inline-block;
+  font-size: 14px;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+}
+.college_menu label {
+  padding-bottom: 10px;
+}
+.college_menu label:hover {
+  border-bottom: 5px solid green;
+}
+.college_menu .college_menu-content {
+  display: none;
+  position: absolute;
+  width: auto;
+  overflow: auto;
+  background-color: rgb(237, 230, 230);
+  z-index: 9;
+}
+.college_menu .college_menu-content a:hover {
+  background-color: green;
+  color: #FFFFFF;
+  z-index: 9;
+}
+.college_menu .college_menu-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.college_menu:hover .college_menu-content {
+  display: block;
+}
+
+.college_menu-content a:hover {
+  color: #FFFFFF;
+}
+
+.markq {
+  background-color: rgb(204, 255, 255);
+  color: gray;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: -2;
+}
+
+.count_container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.count_container .count {
+  font-size: 59px;
+  font-family: sans-serif;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+.count_container .caption {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.events {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  background-color: rgb(230, 230, 230);
+}
+.events .event_box {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  width: 750px;
+  border: 1px solid black;
+  margin-bottom: 0;
+  background-color: rgb(162, 162, 162);
+  color: #000000;
+}
+.events .event_box div {
+  height: 50px;
+  width: 150px;
+}
+.events .event_box div button {
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+}
+.events .event_markq {
+  height: 200px;
+  width: 650px;
+  border: 1px solid black;
+  background-color: #FFFFFF;
+  padding: 0;
+}
+.events .event_markq marquee {
+  background-color: transparent;
+}
+.events .event_markq marquee li {
+  list-style: none;
+}
+.events .event_markq marquee li a {
+  text-decoration: none;
+  color: #000000;
+}
+.events .event_markq marquee li a:hover {
+  color: forestgreen;
+}
+.events .content {
+  border: 1px solid black;
+  height: 200px;
+  width: 750px;
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.profile .profile_content {
+  color: black;
+}
+
+.vision {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.welcome {
+  opacity: 1;
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.welcome h1 {
+  text-align: center;
+  margin-top: -200px;
+  background: transparent;
+  color: rgb(248, 247, 247);
+}
+.welcome img {
+  height: 400px;
+  width: 100%;
+  opacity: 1;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+footer ul {
+  list-style: none;
+}
+footer ul h4 {
+  border-bottom: 5px solid rgb(74, 156, 74);
+}
+footer ul li {
+  text-align: left;
+}/*# sourceMappingURL=index.css.map */
