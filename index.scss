@@ -3,6 +3,11 @@ body{
     padding: 0;
 }
 
+@font-face {
+  font-family: kannada;
+  src: url(./assets/Nudi.ttf);
+}
+
 $lbc: rgb(237, 230, 230);
 
 .registration {
@@ -38,10 +43,16 @@ $lbc: rgb(237, 230, 230);
     justify-content: end;
     background-color: rgb(177, 214, 156);
 
+    
+
     li{
       list-style: none;
       margin-left: 8px;
       margin-right: 10px;
+
+      .kannada{
+        font-family: kannada;
+      }
     }
 
     a{
@@ -57,86 +68,67 @@ $lbc: rgb(237, 230, 230);
 
   .college_logo{
     align-items: center;
+    width: 100%;
     img{
       width: 100%;
       height: auto;
-      padding-left: 200px;
-      padding-right: 220px;
     }
   }
 
-  .college_nav{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    position: sticky;
-    li:hover{
-    color: rgb(129, 205, 156);
-    }
-
-    li{
-      margin-right: 20px;
-      margin-left: 20px;
-      list-style: none;
-      color: rgb(74, 38, 159);
-    }
-  }
-
-  .college_menu {
+ nav{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  ul{
+    padding: 0;
+    list-style: none;
+    background: #fbfafa;
+    justify-content: space-around;
+}
+ul li{
     display: inline-block;
-    font-size: 14px;
-    position: sticky !important;
-
-    label{
-      padding-bottom: 10px;
-    }
-  
-    label:hover{
-      border-bottom: 5px solid green;
-    }
-  .college_menu-content {
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+ul li a{
+    display: block;
+    padding: 8px 25px;
+    color: #333;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: #fff;
+    background: #939393;
+}
+ul li ul.dropdown{
+    min-width: 150px; 
+    background: #f2f2f2;
     display: none;
     position: absolute;
-    width: auto;
-    overflow: auto;
-    background-color: $lbc;
-    z-index: 9;
-  }
-  
-  .college_menu-content a:hover{
-    background-color: green;
-    color: #FFFFFF;
-    z-index: 9;
-  }
-
-  .college_menu-content a {
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.dropdown{
+    display: block;	
+}
+ul li ul.dropdown li{
     display: block;
-    color: #000000;
-    padding: 5px;
-    text-decoration: none;
-  }
 }
-
-.college_menu:hover .college_menu-content {
-  display: block;
-}
-
-.college_menu-content a:hover {
-  color: #FFFFFF;
-}
-
-.markq{
-    background-color: rgb(204, 255, 255);
-    color: gray;
+ } 
+.markcontainer{
+  margin-top: 50px;
+  .markq{
+    color: rgb(14, 14, 14);
     font-weight: bold;
     font-size: 20px;
-    z-index: -2;
   }
+}
 
   .count_container{
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top: 175px;
 
     .count{
       font-size: 59px;
@@ -151,81 +143,24 @@ $lbc: rgb(237, 230, 230);
     }
   }
 
-  .events{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    background-color: rgb(230, 230, 230);
-
-    .event_box{
-      display: flex;
-      justify-content: space-around;
-      margin: 10px;
-      width: 750px;
-      border: 1px solid black;
-      margin-bottom: 0;
-      background-color: rgb(162, 162, 162);
-      color: #000000;
-
-      div{
-        height: 50px;
-        width: 150px;
-        button{
-          margin-top: 10px;
-          background-color: transparent;
-          border: none;
-        }
-      }
-    }
-
-    .event_markq{
-      height: 200px;
-      width: 650px;
-      border: 1px solid black;
-      background-color: #FFFFFF;
-      padding: 0;
-
-      marquee{
-        background-color: transparent;
-        li{
-          list-style: none;
-          a{
-            text-decoration: none;
-            color: #000000;
-          }
-          a:hover{
-            color: forestgreen;
-          }
-        }
-      }
-    }
-
-    .content{
-      border: 1px solid black;
-      height: 200px;
-      width: 750px;
-      margin-left: 10px;
-      margin-top: 0;
-
-    }
-  }
-
   .profile{
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    img{
+      width: 364px;
+      height: 280px;
+    }
+
 
     .profile_content{
       color: black;
     }
   }
 
-  .vision{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-  }
-
+ 
   .welcome{
     // background-image: url();
     opacity: 1;
@@ -235,6 +170,12 @@ $lbc: rgb(237, 230, 230);
     h1{
       text-align: center;
       margin-top: -200px;
+      background: transparent;
+      color: rgb(248, 247, 247);
+    }
+
+    p{
+      margin-top: 28px;
       background: transparent;
       color: rgb(248, 247, 247);
     }
@@ -251,14 +192,33 @@ $lbc: rgb(237, 230, 230);
     margin-top: 50px;
   }
 
-  // nav{
-  //   position: sticky;
-  //   ul{
-  //     display: flex;
-  //     position: sticky;
-  //   }
-  // }
 
+  .slider{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    .events{
+      margin-top: 24px;
+      height: 280px;
+      width: 306px;
+    }
+    .mission{
+      margin-top: 20px;
+      width: 360px;
+      height: 140px;
+    }
+    .vision{
+      margin-top: 20px;
+      width: 360px;
+      height: 140px;
+    }
+
+    .imgslider{
+      margin-top: 20px;
+      width: 782px;
+      height: 277px;
+    }
+  }
 
   footer{
     display: flex;
