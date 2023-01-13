@@ -10,49 +10,17 @@ body{
 
 $lbc: rgb(237, 230, 230);
 
-.registration {
-    display: inline-block;
-    font-size: 14px;
-  
-  .registration-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-    overflow: auto;
-    background-color: $lbc;
-  }
-  
-  .registration-content a {
-    display: block;
-    color: #000000;
-    padding: 5px;
-    text-decoration: none;
-  }
-}
-
-.registration:hover .registration-content {
-  display: block;
-}
-
-.registration-content a:hover {
-  color: #FFFFFF;
-}
+//  main nav bar 
 
   .main_navbar{
     display: flex;
     justify-content: end;
     background-color: rgb(177, 214, 156);
 
-    
-
     li{
       list-style: none;
       margin-left: 8px;
       margin-right: 10px;
-
-      .kannada{
-        font-family: kannada;
-      }
     }
 
     a{
@@ -63,11 +31,11 @@ $lbc: rgb(237, 230, 230);
 
     a:hover{
       color: #FFFFFF;
+      font-weight: bold;
     }
   }
 
   .college_logo{
-    align-items: center;
     width: 100%;
     img{
       width: 100%;
@@ -86,6 +54,10 @@ $lbc: rgb(237, 230, 230);
     list-style: none;
     background: #fbfafa;
     justify-content: space-around;
+
+    li:hover{
+      box-shadow: 4px 2px 5px 1px #000;
+    }
 }
 ul li{
     display: inline-block;
@@ -101,7 +73,9 @@ ul li a{
 }
 ul li a:hover{
     color: #fff;
-    background: #939393;
+    font-weight: bolder;
+    background-color: darkgray;
+    text-transform: uppercase;
 }
 ul li ul.dropdown{
     min-width: 150px; 
@@ -118,6 +92,9 @@ ul li ul.dropdown li{
     display: block;
 }
  } 
+
+  // nav bar ends 
+
 .markcontainer{
   margin-top: 50px;
   .markq{
@@ -164,7 +141,6 @@ ul li ul.dropdown li{
 
  
   .welcome{
-    // background-image: url();
     opacity: 1;
     height: 400px;
     width: 100%;
@@ -175,6 +151,9 @@ ul li ul.dropdown li{
       background: transparent;
       color: rgb(248, 247, 247);
     }
+
+    
+    
 
     p{
       margin-top: 28px;
@@ -188,8 +167,6 @@ ul li ul.dropdown li{
       margin-bottom: 30px;
     }
   }
-
-
   .info{
     margin-top: 310px;
     .extra{
@@ -228,6 +205,9 @@ ul li ul.dropdown li{
       height: 277px;
     }
   }
+
+
+ 
 
   footer{
     display: flex;

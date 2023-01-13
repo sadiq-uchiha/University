@@ -44,11 +44,7 @@ nav {
 nav ul {
   padding: 0;
   list-style: none;
-  background: #fbfafa;
   justify-content: space-around;
-}
-nav ul li:hover {
-  box-shadow: 4px 2px 5px 1px #000;
 }
 nav ul li {
   display: inline-block;
@@ -63,7 +59,7 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li a:hover {
-  color: #fff;
+  color: rgb(248, 245, 245);
   font-weight: bolder;
   background-color: darkgray;
   text-transform: uppercase;
@@ -83,104 +79,24 @@ nav ul li ul.dropdown li {
   display: block;
 }
 
-.markcontainer {
-  margin-top: 50px;
+.heading {
+  background-color: rgba(88, 178, 211, 0.6705882353);
+  height: 80px;
+  padding: 8px;
 }
-.markcontainer .markq {
-  color: rgb(14, 14, 14);
-  font-weight: bold;
-  font-size: 20px;
+.heading h1 {
+  margin-left: 50px;
 }
 
-.count_container {
+.upcoming_event_section {
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
-  margin-top: 175px;
-}
-.count_container .count {
-  font-size: 59px;
-  font-family: sans-serif;
-  line-height: 1;
-  margin-bottom: 25px;
-}
-.count_container .caption {
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.profile {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 60px;
-  margin-bottom: 40px;
-}
-.profile img {
-  width: 364px;
-  height: 280px;
-}
-.profile .profile_content {
-  color: black;
-}
-
-.welcome {
-  opacity: 1;
-  height: 400px;
-  width: 100%;
-  background-repeat: no-repeat;
-}
-.welcome h1 {
-  text-align: center;
-  margin-top: -375px;
-  background: transparent;
-  color: rgb(248, 247, 247);
-}
-.welcome p {
-  margin-top: 28px;
-  background: transparent;
-  color: rgb(248, 247, 247);
-}
-.welcome img {
-  height: 650px;
-  width: 100%;
-  opacity: 1;
-  margin-bottom: 30px;
-}
-
-.info {
-  margin-top: 310px;
-}
-.info .extra {
-  margin-left: 28px;
-}
-
-.cards {
   margin-top: 100px;
 }
-
-.slider {
-  width: 100%;
-  height: 350px;
+.upcoming_event_section .event-description {
   display: flex;
-}
-.slider .events {
-  margin-top: 24px;
-  height: 280px;
-  width: 306px;
-}
-.slider .mission {
-  margin-top: 20px;
-  width: 360px;
-  height: 140px;
-}
-.slider .vision {
-  margin-top: 20px;
-  width: 360px;
-  height: 140px;
-}
-.slider .imgslider {
-  margin-top: 20px;
-  width: 782px;
-  height: 277px;
 }
 
 footer {
@@ -198,4 +114,4 @@ footer ul h4 {
 }
 footer ul li {
   text-align: left;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=event.css.map */
