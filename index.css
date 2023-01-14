@@ -95,7 +95,7 @@ nav ul li ul.dropdown li {
 .count_container {
   display: flex;
   justify-content: space-around;
-  margin-top: 175px;
+  margin-top: 250px;
 }
 .count_container .count {
   font-size: 59px;
@@ -169,24 +169,24 @@ nav ul li ul.dropdown li {
 }
 .slider .mission {
   margin-top: 20px;
-  width: 360px;
+  width: 200px;
   height: 140px;
 }
 .slider .vision {
-  margin-top: 20px;
-  width: 360px;
+  margin-top: 114px;
+  width: 200px;
   height: 140px;
 }
 .slider .imgslider {
   margin-top: 20px;
-  width: 782px;
+  width: 962px;
   height: 277px;
 }
 
 footer {
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 250px;
   background-color: #000000;
   color: #FFFFFF;
 }
