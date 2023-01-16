@@ -31,8 +31,9 @@ body {
   width: 100%;
 }
 .college_logo img {
-  width: 100%;
-  height: auto;
+  width: 1275px;
+  height: 205px;
+  margin-left: 175px;
 }
 
 nav {
